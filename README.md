@@ -1,5 +1,5 @@
 
-# Kung-Fig Ref
+# Kung-Fig common parsers
 
-Ref objects (variable) for [Kung Fig](https://github.com/cronvel/kung-fig).
+Common parsers for various [Kung Fig](https://github.com/cronvel/kung-fig) modules.
 
