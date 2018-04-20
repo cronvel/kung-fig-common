@@ -1,5 +1,5 @@
 /*
-	Kung Fig common parsers
+	Kung Fig common
 	
 	Copyright (c) 2015 - 2018 Cédric Ronvel
 	
