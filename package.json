@@ -1,11 +1,11 @@
 {
-  "name": "kung-fig-common-parsers",
+  "name": "kung-fig-common",
   "version": "0.41.9",
   "engines": {
     "node": ">=6.0.0"
   },
-  "description": "Common parsers for kung-fig.",
-  "main": "lib/parsers.js",
+  "description": "Common parsers and stringifiers for kung-fig.",
+  "main": "lib/common.js",
   "directories": {
     "test": "test"
   },
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cronvel/kung-fig-common-parsers.git"
+    "url": "https://github.com/cronvel/kung-fig-common.git"
   },
   "keywords": [
     "kung-fig",
@@ -27,7 +27,7 @@
   "author": "Cédric Ronvel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cronvel/kung-fig-common-parsers/issues"
+    "url": "https://github.com/cronvel/kung-fig-common/issues"
   },
   "config": {
     "tea-time": {
@@ -37,7 +37,7 @@
     }
   },
   "copyright": {
-    "title": "Kung Fig common parsers",
+    "title": "Kung Fig common",
     "years": [
       2015,
       2018
