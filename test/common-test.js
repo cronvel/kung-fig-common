@@ -36,44 +36,42 @@ const parsers = require( '..' ).parsers ;
 
 describe( "Common parsers" , () => {
 	
-	var runtime = { i: 0 } ;
-
 	it( "should parse an integer number" , () => {
-		expect( parsers.parseNumber( '123' , runtime ) ).to.be( 123 ) ;
-		expect( parsers.parseNumber( '-12' , runtime ) ).to.be( -12 ) ;
-		expect( parsers.parseNumber( '+12' , runtime ) ).to.be( 12 ) ;
-		expect( parsers.parseNumber( '0' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '+0' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '-0' , runtime ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '123' , { i: 0 } ) ).to.be( 123 ) ;
+		expect( parsers.parseNumber( '-12' , { i: 0 } ) ).to.be( -12 ) ;
+		expect( parsers.parseNumber( '+12' , { i: 0 } ) ).to.be( 12 ) ;
+		expect( parsers.parseNumber( '0' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '+0' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '-0' , { i: 0 } ) ).to.be( 0 ) ;
 	} ) ;
 
 	it( "should parse a float number" , () => {
-		expect( parsers.parseNumber( '123.34' , runtime ) ).to.be( 123.34 ) ;
-		expect( parsers.parseNumber( '-12.34' , runtime ) ).to.be( -12.34 ) ;
-		expect( parsers.parseNumber( '+12.34' , runtime ) ).to.be( 12.34 ) ;
-		expect( parsers.parseNumber( '0.0' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '+0.0' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '-0.0' , runtime ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '123.34' , { i: 0 } ) ).to.be( 123.34 ) ;
+		expect( parsers.parseNumber( '-12.34' , { i: 0 } ) ).to.be( -12.34 ) ;
+		expect( parsers.parseNumber( '+12.34' , { i: 0 } ) ).to.be( 12.34 ) ;
+		expect( parsers.parseNumber( '0.0' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '+0.0' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '-0.0' , { i: 0 } ) ).to.be( 0 ) ;
 	} ) ;
 
 	it( "should parse percent" , () => {
-		expect( parsers.parseNumber( '0%' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '100%' , runtime ) ).to.be( 1 ) ;
-		expect( parsers.parseNumber( '250%' , runtime ) ).to.be( 2.5 ) ;
-		expect( parsers.parseNumber( '12%' , runtime ) ).to.be( 0.12 ) ;
-		expect( parsers.parseNumber( '47.5%' , runtime ) ).to.be( 0.475 ) ;
+		expect( parsers.parseNumber( '0%' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '100%' , { i: 0 } ) ).to.be( 1 ) ;
+		expect( parsers.parseNumber( '250%' , { i: 0 } ) ).to.be( 2.5 ) ;
+		expect( parsers.parseNumber( '12%' , { i: 0 } ) ).to.be( 0.12 ) ;
+		expect( parsers.parseNumber( '47.5%' , { i: 0 } ) ).to.be( 0.475 ) ;
 	} ) ;
 
 	it( "should parse relative percent" , () => {
-		expect( parsers.parseNumber( '+20%' , runtime ) ).to.be( 1.2 ) ;
-		expect( parsers.parseNumber( '-20%' , runtime ) ).to.be( 0.8 ) ;
-		expect( parsers.parseNumber( '+12.5%' , runtime ) ).to.be( 1.125 ) ;
-		expect( parsers.parseNumber( '+100%' , runtime ) ).to.be( 2 ) ;
-		expect( parsers.parseNumber( '-100%' , runtime ) ).to.be( 0 ) ;
-		expect( parsers.parseNumber( '+125%' , runtime ) ).to.be( 2.25 ) ;
-		expect( parsers.parseNumber( '+0%' , runtime ) ).to.be( 1 ) ;
-		expect( parsers.parseNumber( '-0%' , runtime ) ).to.be( 1 ) ;
-		expect( parsers.parseNumber( '-200%' , runtime ) ).to.be( -1 ) ;
+		expect( parsers.parseNumber( '+20%' , { i: 0 } ) ).to.be( 1.2 ) ;
+		expect( parsers.parseNumber( '-20%' , { i: 0 } ) ).to.be( 0.8 ) ;
+		expect( parsers.parseNumber( '+12.5%' , { i: 0 } ) ).to.be( 1.125 ) ;
+		expect( parsers.parseNumber( '+100%' , { i: 0 } ) ).to.be( 2 ) ;
+		expect( parsers.parseNumber( '-100%' , { i: 0 } ) ).to.be( 0 ) ;
+		expect( parsers.parseNumber( '+125%' , { i: 0 } ) ).to.be( 2.25 ) ;
+		expect( parsers.parseNumber( '+0%' , { i: 0 } ) ).to.be( 1 ) ;
+		expect( parsers.parseNumber( '-0%' , { i: 0 } ) ).to.be( 1 ) ;
+		expect( parsers.parseNumber( '-200%' , { i: 0 } ) ).to.be( -1 ) ;
 	} ) ;
 } ) ;
 
